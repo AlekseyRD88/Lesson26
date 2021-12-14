@@ -1,0 +1,316 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Mulish", sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.homeDevs {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  width: 640px;
+  background: linear-gradient(180deg, rgba(25, 104, 252, 0.0001) 0%, rgba(25, 104, 252, 0.05) 23.07%, rgba(25, 104, 252, 0.0001) 99.94%, rgba(25, 104, 252, 0.05) 100%);
+}
+
+.page-header .logo {
+  display: flex;
+  margin-left: 80px;
+}
+.page-header .logo__image {
+  margin-top: 40px;
+  margin-left: 80px;
+}
+.page-header .logo__text {
+  margin-top: 50px;
+  margin-left: 10px;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+  color: #1968FC;
+}
+
+.headline__text {
+  margin: 80px 80px 20px 80px;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 60px;
+  letter-spacing: 1px;
+  color: #11223F;
+}
+.headline__subheadline-text {
+  font-size: 20px;
+  line-height: 40px;
+  color: #11223F;
+  margin-right: 80px;
+  margin-bottom: 40px;
+  margin-left: 80px;
+}
+.headline__btn {
+  background: #1968FC;
+  box-shadow: 0px 10px 40px rgba(25, 104, 252, 0.3);
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  text-shadow: 0px 10px 40px rgba(25, 104, 252, 0.2);
+  width: 300px;
+  height: 50px;
+  margin-left: 80px;
+  margin-bottom: 80px;
+}
+.headline__illustration {
+  margin-left: 20px;
+  margin-top: 80px;
+}
+
+.please-visit-desktop-cite {
+  width: 640px;
+  height: 180px;
+  background-image: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson26/hw1/PleaseVisitDesktopSiteSectionBackground.png);
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 40px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  padding: 30px 60px;
+}
+
+.testimonial {
+  background: #FFFFFF;
+  width: 540px;
+  height: 280px;
+  margin: 50px 50px 0;
+  position: relative;
+}
+.testimonial__person {
+  display: flex;
+}
+.testimonial__person-picture {
+  margin-top: 40px;
+  margin-left: 40px;
+}
+.testimonial__person-details {
+  display: flex;
+  flex-direction: column;
+}
+.testimonial__person-details-name {
+  margin-left: 20px;
+  margin-top: 60px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 30px;
+  display: flex;
+  align-items: center;
+  color: #11223F;
+}
+.testimonial__person-details-position {
+  margin-left: 20px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 30px;
+  display: flex;
+  align-items: center;
+  color: #1967FA;
+}
+.testimonial__text {
+  margin: 40px;
+  font-size: 16px;
+  line-height: 30px;
+  color: #11223F;
+}
+.testimonial__quote {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-right: 40px;
+  margin-top: 40px;
+}
+
+.how-it-works__title {
+  margin: 120px 60px 0;
+  font-size: 30px;
+  line-height: 60px;
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  color: #11223F;
+}
+.how-it-works__line {
+  width: 80px;
+  height: 4px;
+  border-top: 2px solid #1968FC;
+  margin-top: 10px;
+  margin-left: 60px;
+}
+.how-it-works__card-connection {
+  height: 40px;
+  width: 1px;
+  border-left: 2px dashed #1968FC;
+  margin-left: 119px;
+}
+.how-it-works__block {
+  background: #FFFFFF;
+  box-shadow: 0px 20px 60px rgba(49, 69, 244, 0.1);
+  width: 520px;
+  height: 180px;
+  margin-top: 48px;
+  margin-left: 60px;
+  margin-right: 60px;
+  position: relative;
+}
+.how-it-works__block-step {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  padding-top: 40px;
+  padding-left: 40px;
+  color: #11223F;
+}
+.how-it-works__block-action {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 40px;
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  color: #1967FA;
+  padding-left: 40px;
+}
+.how-it-works__block-text {
+  font-size: 16px;
+  line-height: 30px;
+  display: flex;
+  align-items: center;
+  color: #11223F;
+  padding-top: 10px;
+  padding-left: 40px;
+}
+.how-it-works__block-picture {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-right: 40px;
+  margin-top: 40px;
+}
+.how-it-works__block-decoration {
+  position: absolute;
+  bottom: -5px;
+  right: -5px;
+}
+.how-it-works__margins {
+  margin-top: 0;
+}
+
+.features__title {
+  font-size: 30px;
+  line-height: 60px;
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  color: #11223F;
+  margin-top: 125px;
+  margin-left: 60px;
+  margin-right: 60px;
+}
+.features__line {
+  width: 80px;
+  height: 4px;
+  border-top: 2px solid #1968FC;
+  margin-top: 10px;
+  margin-left: 60px;
+}
+.features__card-mobile {
+  margin-top: 48px;
+  margin-left: 60px;
+  margin-right: 60px;
+  position: relative;
+}
+.features__card-mobile-view {
+  display: flex;
+}
+.features__card-mobile-view-icon {
+  width: 80px;
+  height: 80px;
+}
+.features__card-mobile-view-title {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 40px;
+  display: flex;
+  align-items: center;
+  color: #11223F;
+  margin-left: 20px;
+}
+.features__card-mobile-text {
+  background: #FFFFFF;
+  box-shadow: 0px 20px 60px rgba(49, 69, 244, 0.1);
+  font-size: 16px;
+  line-height: 30px;
+  color: #11223F;
+  padding: 30px 40px;
+}
+.features__card-mobile-decoration {
+  position: absolute;
+  bottom: -5px;
+  right: -5px;
+}
+
+.footer {
+  display: flex;
+  position: relative;
+  margin-top: 61px;
+  margin-bottom: 90px;
+}
+.footer .logo {
+  display: flex;
+}
+.footer .logo__image {
+  padding: 40px 0 40px 40px;
+}
+.footer .logo__text {
+  background: rgba(25, 104, 252, 0.05);
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #1968FC;
+  height: 50px;
+  width: 200px;
+  margin-top: 40px;
+}
+.footer .social-networks {
+  margin-top: 55px;
+  margin-bottom: 55px;
+  margin-left: 70px;
+}
+.footer .social-networks__item-instagram {
+  padding-left: 38px;
+}
+.footer .image {
+  width: 55px;
+  height: 60px;
+  position: absolute;
+  top: 70px;
+  left: 545px;
+  right: 0;
+  margin-bottom: 90px;
+}
+
+/*# sourceMappingURL=styles.css.map */
