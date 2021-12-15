@@ -20,15 +20,26 @@ body {
    flex-direction: column;
    width: 640px;
    background: linear-gradient(180deg, rgba(25, 104, 252, 0.0001) 0%, rgba(25, 104, 252, 0.05) 23.07%, rgba(25, 104, 252, 0.0001) 99.94%, rgba(25, 104, 252, 0.05) 100%);
+   @include for-large-up {
+      width: 100%;
+      background-image: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson26/hw1/BackgroundDecor.png);
+      position: relative;
+   }
 }
 .page-header {
+   @include for-large-up {
+      display: flex;
+      margin-top: 30px;
+   }
 .logo {
    display: flex;
-   margin-left: 80px;
+   margin-left: 160px;
+   
    &__image {
       margin-top: 40px;
-      margin-left: 80px;
+      
    }
+   
    &__text {
       margin-top: 50px;
       margin-left: 10px;
@@ -37,9 +48,55 @@ body {
       line-height: 30px;
       color: #1968FC;
    }
+   
+}
+.navigation {
+   display: none;
+   @include for-large-up {
+      margin-left: 220px;
+      margin-right: 20px;
+      margin-top: 30px;
+      display: flex;   
+   }
+   &__item {
+      @include for-large-up {
+         width: 120px;
+         height: 50px;
+         font-weight: 600;
+         font-size: 14px;
+         line-height: 20px;
+         display: flex;
+         align-items: center;
+         text-align: center;
+         color: #000000;
+         text-decoration: none;
+      }
+   }
+}
+.action-button {
+   display: none;
+   @include for-large-up {
+      background: #1968FC;
+      box-shadow: 0px 10px 40px rgba(25, 104, 252, 0.3); 
+      width: 180px;
+      height: 50px;
+      margin-top: 30px;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      text-transform: uppercase;
+      color: #FFFFFF;
+      text-shadow: 0px 10px 40px rgba(25, 104, 252, 0.2);
+   }
+   
 }
 }
 .headline {
+   &-info {
    &__text {
       margin: 80px 80px 20px 80px;
       font-weight: 600;
@@ -47,6 +104,12 @@ body {
       line-height: 60px;
       letter-spacing: 1px;
       color: #11223F;
+      @include for-large-up {
+         margin-top: 150px;
+         margin-left: 160px;
+         height: 120px;
+         width: 600px;
+      }
    }
    &__subheadline-text {
       font-size: 20px;
@@ -55,7 +118,36 @@ body {
       margin-right: 80px;
       margin-bottom: 40px;
       margin-left: 80px;
+      @include for-large-up {
+         margin-top: 20px;
+         margin-left: 160px;
+         height: 120px;
+         width: 600px;
+      }
    }
+   &__btn {
+      display: none;
+      @include for-large-up {
+         width: 300px;
+         height: 50px;
+         background: #1968FC;
+         box-shadow: 0px 10px 40px rgba(25, 104, 252, 0.3);
+         font-weight: bold;
+         font-size: 14px;
+         line-height: 20px;  
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         text-align: center;
+         text-transform: uppercase;
+         color: #FFFFFF;
+         text-shadow: 0px 10px 40px rgba(25, 104, 252, 0.2);
+         margin: 0;
+         margin-top: 40px;
+         margin-left: 160px;
+      }
+   }
+}
    &__btn {
       background: #1968FC;
       box-shadow: 0px 10px 40px rgba(25, 104, 252, 0.3); 
@@ -69,10 +161,20 @@ body {
       height: 50px;
       margin-left: 80px;
       margin-bottom: 80px;
+      @include for-large-up {
+         display: none;
+      }
    }
    &__illustration {
       margin-left: 20px;
       margin-top: 80px;
+      @include for-large-up {
+         width: 599px;
+         height: 502px;
+         position: absolute;
+         top: 280px;
+         left: 600px;
+      }
    }
 }
 .please-visit-desktop-cite {
@@ -88,6 +190,14 @@ body {
    text-transform: uppercase; 
    color: #FFFFFF;
    padding: 30px 60px;
+   @include for-large-up {
+      display: none;
+   }
+}
+.testimonial-section {
+   @include for-large-up {
+      display: flex;
+   }
 }
 .testimonial {
    background: #FFFFFF;
@@ -95,6 +205,10 @@ body {
    height: 280px;
    margin: 50px 50px 0;
    position: relative;
+   @include for-large-up {
+      margin-top: 160px;
+      margin-left: 110px;
+   }
    &__person {
       display: flex;
       &-picture {
@@ -148,6 +262,11 @@ body {
       align-items: center;
       text-transform: uppercase;
       color: #11223F;
+      @include for-large-up {
+         margin: 0;
+         margin-top: 120px;
+         margin-left: 160px;
+      }
    }
    &__line {
       width: 80px;
@@ -155,12 +274,45 @@ body {
       border-top: 2px solid #1968FC;
       margin-top: 10px;
       margin-left: 60px;
+      @include for-large-up{
+         margin-top: 120px;
+         margin-left: 120px;
+      }
    }
+   &__cards {
+      @include for-large-up {
+         display: flex;
+      }
+   }   
    &__card-connection {
       height: 40px;
       width: 1px;
       border-left: 2px dashed #1968FC;
       margin-left: 119px;
+      @include for-large-up {
+         width: 70px;
+         height: 1px;
+         margin-left: 0;
+         border: none;
+         border-top: 2px dashed #1968FC;
+      &-line1 {
+         @include for-large-up {
+            position: absolute;
+         left: 485px;
+         top: 1510px;
+         }
+         
+      }
+      &-line2 {
+         @include for-large-up {
+            position: absolute;
+         left: 885px;
+         top: 1550px;
+         }
+         
+      }
+
+      }
    }
    &__block {
       background: #FFFFFF;
@@ -171,6 +323,14 @@ body {
       margin-left: 60px;
       margin-right: 60px;
       position: relative;
+      @include for-large-up {
+         width: 320px;
+         height: 220px;
+         margin-top: 0;
+         
+      }
+      
+   
       &-step {
          font-weight: 700;
          font-size: 12px;
@@ -180,6 +340,10 @@ body {
          padding-top: 40px;
          padding-left: 40px;
          color: #11223F;
+         @include for-large-up {
+            
+         }
+         
    }
       &-action {
          font-weight: 700;
@@ -190,6 +354,9 @@ body {
          text-transform: uppercase;
          color: #1967FA;
          padding-left: 40px;
+         @include for-large-up {
+            
+         }
       }
       &-text {
          font-size: 16px;
@@ -199,6 +366,9 @@ body {
          color: #11223F;
          padding-top: 10px;
          padding-left: 40px;
+         @include for-large-up {
+            
+         }
       }
       &-picture {
          position: absolute;
@@ -206,6 +376,7 @@ body {
          right: 0;
          margin-right: 40px;
          margin-top: 40px;
+         
       }
       &-decoration {
          position: absolute;
@@ -213,8 +384,35 @@ body {
          right: -5px;
       }
 }
+&__block1 {
+   @include for-large-up {
+      margin-left: 160px;
+      margin-right: 0;
+      margin-top: 38px;
+   }
+  
+}
+&__block2 {
+   @include for-large-up {
+     position: absolute;
+     left: 560px;
+     top: 1440px;
+   }
+}
+&__block3 {
+   @include for-large-up {
+     position: absolute;
+     left: 960px;
+     top: 1480px;
+   }
+}
+
 &__margins {
    margin-top: 0;
+   @include for-large-up {
+      margin-left: 0;
+      margin-right: 0;
+   }
 }
 }
 .features {
@@ -228,6 +426,10 @@ body {
       margin-top: 125px;
       margin-left: 60px;
       margin-right: 60px;
+      @include for-large-up {
+         margin-top: 200px;
+         margin-left: 160px;
+      }
    }
    &__line {
       width: 80px;
@@ -235,6 +437,16 @@ body {
       border-top: 2px solid #1968FC;
       margin-top: 10px;
       margin-left: 60px;
+      @include for-large-up {
+         margin-top: 10px;
+         margin-left: 120px;
+      }
+   }
+   &__list {
+      @include for-large-up {
+         display: flex;
+         
+      }
    }
    &__card-mobile{
       margin-top: 48px;
@@ -246,6 +458,10 @@ body {
       &-icon {
          width: 80px;
          height: 80px;
+         @include for-large-up {
+            width: 120px;
+            height: 120px;
+         }
       }
       &-title {
          font-weight: 600;
@@ -255,6 +471,10 @@ body {
          align-items: center;
          color: #11223F;
          margin-left: 20px;
+         @include for-large-up {
+            margin: 0;
+            padding: 20px;
+         }
       }
    }
    &-text {
@@ -264,12 +484,35 @@ body {
       line-height: 30px;
       color: #11223F;
       padding: 30px 40px;
+      @include for-large-up {
+         padding: 40px;
+      }
    }
    &-decoration {
       position: absolute;
          bottom: -5px;
          right: -5px;
    }
+   }
+   &__card-desktop1 {
+      @include for-large-up {
+         margin-left: 160px;
+         margin-top: 48px;
+      }
+      
+   }
+   &__card-desktop2 {
+      @include for-large-up {
+         margin-left: 74px;
+         margin-top: 88px;
+      }
+   }
+   &__card-desktop3 {
+      @include for-large-up {
+         margin-left: 86px;
+         margin-top: 128px;
+      }
+      
    }
 }
 .footer {
@@ -281,6 +524,9 @@ body {
       display: flex;
       &__image {
          padding: 40px 0 40px 40px;
+         @include for-large-up {
+            margin-left: 120px;
+         }
       }
       &__text {
          background: rgba(25, 104, 252, 0.05);
@@ -295,7 +541,32 @@ body {
          height: 50px;
          width: 200px;
          margin-top: 40px;
+         @include for-large-up {
+            margin-right: 70px;
+         }
          
+      }
+   }
+   .footer-navigation {
+      display: none;
+      @include for-large-up {
+         display: flex;
+      }
+      &__item {
+         @include for-large-up {
+            margin-top: 40px;
+            width: 120px;
+            height: 50px;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            text-decoration: none;
+            color: #000000;
+         }
       }
    }
    .social-networks {
@@ -314,5 +585,12 @@ body {
       left: 545px;
       right: 0;
       margin-bottom: 90px;
+      @include for-large-up {
+         width: 90px;
+         height: 100px;
+         position: absolute;
+         top: 0;
+         left: 1190px;
+      }
    }
 }
