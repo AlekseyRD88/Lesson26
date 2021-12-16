@@ -29,7 +29,7 @@ body {
 .page-header {
    @include for-large-up {
       display: flex;
-      margin-top: 30px;
+      
    }
 .logo {
    display: flex;
@@ -37,6 +37,7 @@ body {
    
    &__image {
       margin-top: 40px;
+     
       
    }
    
@@ -47,6 +48,7 @@ body {
       font-size: 20px;
       line-height: 30px;
       color: #1968FC;
+      
    }
    
 }
@@ -497,20 +499,27 @@ body {
    &__card-desktop1 {
       @include for-large-up {
          margin-left: 160px;
-         margin-top: 48px;
+         width: 320px;
+         height: 290px;
       }
       
    }
    &__card-desktop2 {
       @include for-large-up {
-         margin-left: 74px;
-         margin-top: 88px;
+         position: absolute;
+         top: 1940px;
+         left: 560px;
+         width: 320px;
+         height: 290px;
       }
    }
    &__card-desktop3 {
       @include for-large-up {
-         margin-left: 86px;
-         margin-top: 128px;
+         position: absolute;
+         left: 960px;
+         top: 1980px;
+         width: 320px;
+         height: 290px;
       }
       
    }
@@ -518,7 +527,7 @@ body {
 .footer {
    display: flex;
    position: relative;
-   margin-top: 61px;
+   margin-top: 180px;
    margin-bottom: 90px;
    .logo {
       display: flex;

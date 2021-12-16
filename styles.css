@@ -30,7 +30,6 @@ body {
 @media screen and (min-width: 1024px) {
   .page-header {
     display: flex;
-    margin-top: 30px;
   }
 }
 .page-header .logo {
@@ -510,26 +509,33 @@ body {
 @media screen and (min-width: 1024px) {
   .features__card-desktop1 {
     margin-left: 160px;
-    margin-top: 48px;
+    width: 320px;
+    height: 290px;
   }
 }
 @media screen and (min-width: 1024px) {
   .features__card-desktop2 {
-    margin-left: 74px;
-    margin-top: 88px;
+    position: absolute;
+    top: 1940px;
+    left: 560px;
+    width: 320px;
+    height: 290px;
   }
 }
 @media screen and (min-width: 1024px) {
   .features__card-desktop3 {
-    margin-left: 86px;
-    margin-top: 128px;
+    position: absolute;
+    left: 960px;
+    top: 1980px;
+    width: 320px;
+    height: 290px;
   }
 }
 
 .footer {
   display: flex;
   position: relative;
-  margin-top: 61px;
+  margin-top: 180px;
   margin-bottom: 90px;
 }
 .footer .logo {
