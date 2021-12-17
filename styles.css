@@ -183,12 +183,12 @@
 }
 
 @media screen and (min-width: 1024px) {
-  .testimonial-section {
+  .reviews {
     display: flex;
   }
 }
 
-.testimonial {
+.review {
   background: #FFFFFF;
   width: 540px;
   height: 280px;
@@ -196,23 +196,23 @@
   position: relative;
 }
 @media screen and (min-width: 1024px) {
-  .testimonial {
+  .review {
     margin-top: 160px;
     margin-left: 110px;
   }
 }
-.testimonial__person {
+.review__person {
   display: flex;
 }
-.testimonial__person-picture {
+.review__person-picture {
   margin-top: 40px;
   margin-left: 40px;
 }
-.testimonial__person-details {
+.review__person-details {
   display: flex;
   flex-direction: column;
 }
-.testimonial__person-details-name {
+.review__person-details-name {
   margin-left: 20px;
   margin-top: 60px;
   font-weight: 600;
@@ -222,7 +222,7 @@
   align-items: center;
   color: #11223F;
 }
-.testimonial__person-details-position {
+.review__person-details-position {
   margin-left: 20px;
   font-weight: 600;
   font-size: 14px;
@@ -231,13 +231,13 @@
   align-items: center;
   color: #1967FA;
 }
-.testimonial__text {
+.review__text {
   margin: 40px;
   font-size: 16px;
   line-height: 30px;
   color: #11223F;
 }
-.testimonial__quote {
+.review__quote {
   position: absolute;
   top: 0;
   right: 0;
@@ -245,7 +245,7 @@
   margin-top: 40px;
 }
 
-.how-it-works__title {
+.workflow__title {
   margin: 120px 60px 0;
   font-size: 30px;
   line-height: 60px;
@@ -255,13 +255,13 @@
   color: #11223F;
 }
 @media screen and (min-width: 1024px) {
-  .how-it-works__title {
+  .workflow__title {
     margin: 0;
     margin-top: 120px;
     margin-left: 160px;
   }
 }
-.how-it-works__line {
+.workflow__line {
   width: 80px;
   height: 4px;
   border-top: 2px solid #1968FC;
@@ -269,24 +269,24 @@
   margin-left: 60px;
 }
 @media screen and (min-width: 1024px) {
-  .how-it-works__line {
+  .workflow__line {
     margin-top: 120px;
     margin-left: 120px;
   }
 }
 @media screen and (min-width: 1024px) {
-  .how-it-works__cards {
+  .workflow__cards {
     display: flex;
   }
 }
-.how-it-works__card-connection {
+.workflow__card-connection {
   height: 40px;
   width: 1px;
   border-left: 2px dashed #1968FC;
   margin-left: 119px;
 }
 @media screen and (min-width: 1024px) {
-  .how-it-works__card-connection {
+  .workflow__card-connection {
     width: 70px;
     height: 1px;
     margin-left: 0;
@@ -295,20 +295,20 @@
   }
 }
 @media screen and (min-width: 1024px) and (min-width: 1024px) {
-  .how-it-works__card-connection-line1 {
+  .workflow__card-connection-line1 {
     position: absolute;
     left: 485px;
     top: 1510px;
   }
 }
 @media screen and (min-width: 1024px) and (min-width: 1024px) {
-  .how-it-works__card-connection-line2 {
+  .workflow__card-connection-line2 {
     position: absolute;
     left: 885px;
     top: 1550px;
   }
 }
-.how-it-works__block {
+.workflow__step {
   background: #FFFFFF;
   box-shadow: 0px 20px 60px rgba(49, 69, 244, 0.1);
   width: 520px;
@@ -319,13 +319,13 @@
   position: relative;
 }
 @media screen and (min-width: 1024px) {
-  .how-it-works__block {
+  .workflow__step {
     width: 320px;
     height: 220px;
     margin-top: 0;
   }
 }
-.how-it-works__block-step {
+.workflow__step-title {
   font-weight: 700;
   font-size: 12px;
   line-height: 20px;
@@ -335,7 +335,7 @@
   padding-left: 40px;
   color: #11223F;
 }
-.how-it-works__block-action {
+.workflow__step-subtitle {
   font-weight: 700;
   font-size: 18px;
   line-height: 40px;
@@ -345,7 +345,7 @@
   color: #1967FA;
   padding-left: 40px;
 }
-.how-it-works__block-text {
+.workflow__step-text {
   font-size: 16px;
   line-height: 30px;
   display: flex;
@@ -354,44 +354,44 @@
   padding-top: 10px;
   padding-left: 40px;
 }
-.how-it-works__block-picture {
+.workflow__step-picture {
   position: absolute;
   top: 0;
   right: 0;
   margin-right: 40px;
   margin-top: 40px;
 }
-.how-it-works__block-decoration {
+.workflow__step-decoration {
   position: absolute;
   bottom: -5px;
   right: -5px;
 }
 @media screen and (min-width: 1024px) {
-  .how-it-works__block1 {
+  .workflow__step1 {
     margin-left: 160px;
     margin-right: 0;
     margin-top: 38px;
   }
 }
 @media screen and (min-width: 1024px) {
-  .how-it-works__block2 {
+  .workflow__step2 {
     position: absolute;
     left: 560px;
     top: 1440px;
   }
 }
 @media screen and (min-width: 1024px) {
-  .how-it-works__block3 {
+  .workflow__step3 {
     position: absolute;
     left: 960px;
     top: 1480px;
   }
 }
-.how-it-works__margins {
+.workflow__margins {
   margin-top: 0;
 }
 @media screen and (min-width: 1024px) {
-  .how-it-works__margins {
+  .workflow__margins {
     margin-left: 0;
     margin-right: 0;
   }
@@ -432,26 +432,26 @@
     display: flex;
   }
 }
-.features__card-mobile {
+.features__list-feature {
   margin-top: 48px;
   margin-left: 60px;
   margin-right: 60px;
   position: relative;
 }
-.features__card-mobile-view {
+.features__list-feature-view {
   display: flex;
 }
-.features__card-mobile-view-icon {
+.features__list-feature-view-icon {
   width: 80px;
   height: 80px;
 }
 @media screen and (min-width: 1024px) {
-  .features__card-mobile-view-icon {
+  .features__list-feature-view-icon {
     width: 120px;
     height: 120px;
   }
 }
-.features__card-mobile-view-title {
+.features__list-feature-view-title {
   font-weight: 600;
   font-size: 20px;
   line-height: 40px;
@@ -461,12 +461,12 @@
   margin-left: 20px;
 }
 @media screen and (min-width: 1024px) {
-  .features__card-mobile-view-title {
+  .features__list-feature-view-title {
     margin: 0;
     padding: 20px;
   }
 }
-.features__card-mobile-text {
+.features__list-feature-text {
   background: #FFFFFF;
   box-shadow: 0px 20px 60px rgba(49, 69, 244, 0.1);
   font-size: 16px;
@@ -475,24 +475,24 @@
   padding: 30px 40px;
 }
 @media screen and (min-width: 1024px) {
-  .features__card-mobile-text {
+  .features__list-feature-text {
     padding: 40px;
   }
 }
-.features__card-mobile-decoration {
+.features__list-feature-decoration {
   position: absolute;
   bottom: -5px;
   right: -5px;
 }
 @media screen and (min-width: 1024px) {
-  .features__card-desktop1 {
+  .features__list-feature-desktop1 {
     margin-left: 160px;
     width: 320px;
     height: 290px;
   }
 }
 @media screen and (min-width: 1024px) {
-  .features__card-desktop2 {
+  .features__list-feature-desktop2 {
     position: absolute;
     top: 1940px;
     left: 560px;
@@ -501,7 +501,7 @@
   }
 }
 @media screen and (min-width: 1024px) {
-  .features__card-desktop3 {
+  .features__list-feature-desktop3 {
     position: absolute;
     left: 960px;
     top: 1980px;
@@ -510,24 +510,24 @@
   }
 }
 
-.footer {
+.page-footer {
   display: flex;
   position: relative;
   margin-top: 180px;
   margin-bottom: 90px;
 }
-.footer .logo {
+.page-footer .footer-logo {
   display: flex;
 }
-.footer .logo__image {
+.page-footer .footer-logo__image {
   padding: 40px 0 40px 40px;
 }
 @media screen and (min-width: 1024px) {
-  .footer .logo__image {
+  .page-footer .footer-logo__image {
     margin-left: 120px;
   }
 }
-.footer .logo__text {
+.page-footer .footer-logo__text {
   background: rgba(25, 104, 252, 0.05);
   font-weight: 600;
   font-size: 14px;
@@ -542,20 +542,20 @@
   margin-top: 40px;
 }
 @media screen and (min-width: 1024px) {
-  .footer .logo__text {
+  .page-footer .footer-logo__text {
     margin-right: 70px;
   }
 }
-.footer .footer-navigation {
+.page-footer .footer-navigation {
   display: none;
 }
 @media screen and (min-width: 1024px) {
-  .footer .footer-navigation {
+  .page-footer .footer-navigation {
     display: flex;
   }
 }
 @media screen and (min-width: 1024px) {
-  .footer .footer-navigation__item {
+  .page-footer .footer-navigation__item {
     margin-top: 40px;
     width: 120px;
     height: 50px;
@@ -570,15 +570,15 @@
     color: #000000;
   }
 }
-.footer .social-networks {
+.page-footer .social-networks {
   margin-top: 55px;
   margin-bottom: 55px;
   margin-left: 70px;
 }
-.footer .social-networks__item-instagram {
+.page-footer .social-networks__item-instagram {
   padding-left: 38px;
 }
-.footer .image {
+.page-footer .image {
   width: 55px;
   height: 60px;
   position: absolute;
@@ -588,7 +588,7 @@
   margin-bottom: 90px;
 }
 @media screen and (min-width: 1024px) {
-  .footer .image {
+  .page-footer .image {
     width: 90px;
     height: 100px;
     position: absolute;
