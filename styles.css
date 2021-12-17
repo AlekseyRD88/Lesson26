@@ -1,32 +1,3 @@
-* {
-  box-sizing: border-box;
-}
-
-html {
-  font-family: "Mulish", sans-serif;
-}
-
-body {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-}
-
-.homeDevs {
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  width: 640px;
-  background: linear-gradient(180deg, rgba(25, 104, 252, 0.0001) 0%, rgba(25, 104, 252, 0.05) 23.07%, rgba(25, 104, 252, 0.0001) 99.94%, rgba(25, 104, 252, 0.05) 100%);
-}
-@media screen and (min-width: 1024px) {
-  .homeDevs {
-    width: 100%;
-    background-image: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson26/hw1/BackgroundDecor.png);
-    position: relative;
-  }
-}
-
 @media screen and (min-width: 1024px) {
   .page-header {
     display: flex;
@@ -34,24 +5,25 @@ body {
 }
 .page-header .logo {
   display: flex;
-  margin-left: 160px;
 }
 .page-header .logo__image {
   margin-top: 40px;
+  margin-left: 80px;
 }
 .page-header .logo__text {
   margin-top: 50px;
-  margin-left: 10px;
   font-weight: 600;
   font-size: 20px;
+  margin-left: 10px;
   line-height: 30px;
   color: #1968FC;
 }
-.page-header .navigation {
+
+.navigation {
   display: none;
 }
 @media screen and (min-width: 1024px) {
-  .page-header .navigation {
+  .navigation {
     margin-left: 220px;
     margin-right: 20px;
     margin-top: 30px;
@@ -59,7 +31,7 @@ body {
   }
 }
 @media screen and (min-width: 1024px) {
-  .page-header .navigation__item {
+  .navigation__item {
     width: 120px;
     height: 50px;
     font-weight: 600;
@@ -72,11 +44,12 @@ body {
     text-decoration: none;
   }
 }
-.page-header .action-button {
+
+.action-button {
   display: none;
 }
 @media screen and (min-width: 1024px) {
-  .page-header .action-button {
+  .action-button {
     background: #1968FC;
     box-shadow: 0px 10px 40px rgba(25, 104, 252, 0.3);
     width: 180px;
@@ -95,7 +68,7 @@ body {
   }
 }
 
-.headline-info__text {
+.headline__text {
   margin: 80px 80px 20px 80px;
   font-weight: 600;
   font-size: 40px;
@@ -104,14 +77,14 @@ body {
   color: #11223F;
 }
 @media screen and (min-width: 1024px) {
-  .headline-info__text {
+  .headline__text {
     margin-top: 150px;
     margin-left: 160px;
     height: 120px;
     width: 600px;
   }
 }
-.headline-info__subheadline-text {
+.headline__subheadline-text {
   font-size: 20px;
   line-height: 40px;
   color: #11223F;
@@ -120,18 +93,18 @@ body {
   margin-left: 80px;
 }
 @media screen and (min-width: 1024px) {
-  .headline-info__subheadline-text {
+  .headline__subheadline-text {
     margin-top: 20px;
     margin-left: 160px;
     height: 120px;
     width: 600px;
   }
 }
-.headline-info__btn {
+.headline__btn-desktop {
   display: none;
 }
 @media screen and (min-width: 1024px) {
-  .headline-info__btn {
+  .headline__btn-desktop {
     width: 300px;
     height: 50px;
     background: #1968FC;
@@ -151,7 +124,7 @@ body {
     margin-left: 160px;
   }
 }
-.headline__btn {
+.headline__btn-mobile {
   background: #1968FC;
   box-shadow: 0px 10px 40px rgba(25, 104, 252, 0.3);
   font-weight: bold;
@@ -166,7 +139,7 @@ body {
   margin-bottom: 80px;
 }
 @media screen and (min-width: 1024px) {
-  .headline__btn {
+  .headline__btn-mobile {
     display: none;
   }
 }
@@ -616,6 +589,43 @@ body {
     position: absolute;
     top: 0;
     left: 1190px;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Mulish", sans-serif;
+  color: #11223F;
+  font-size: 16px;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: linear-gradient(180deg, rgba(25, 104, 252, 0.0001) 0%, rgba(25, 104, 252, 0.05) 23.07%, rgba(25, 104, 252, 0.0001) 99.94%, rgba(25, 104, 252, 0.05) 100%);
+  background-repeat: repeat-y;
+}
+@media screen and (min-width: 1024px) {
+  body {
+    background-image: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson26/hw1/BackgroundDecor.png);
+  }
+}
+
+.homeDevs {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background: linear-gradient(180deg, rgba(25, 104, 252, 0.0001) 0%, rgba(25, 104, 252, 0.05) 23.07%, rgba(25, 104, 252, 0.0001) 99.94%, rgba(25, 104, 252, 0.05) 100%);
+}
+@media screen and (min-width: 1024px) {
+  .homeDevs {
+    max-width: 1440px;
+    position: relative;
   }
 }
 
