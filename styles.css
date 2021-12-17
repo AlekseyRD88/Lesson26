@@ -28,19 +28,18 @@
     margin-top: 10px;
   }
 }
-
-.navigation {
+.page-header__navigation {
   display: none;
 }
 @media screen and (min-width: 1024px) {
-  .navigation {
+  .page-header__navigation {
     margin-left: 220px;
     margin-right: 20px;
     display: flex;
   }
 }
 @media screen and (min-width: 1024px) {
-  .navigation__item {
+  .page-header__navigation-item {
     width: 120px;
     height: 50px;
     font-weight: 600;
@@ -53,12 +52,11 @@
     text-decoration: none;
   }
 }
-
-.action-button {
+.page-header__upload-btn {
   display: none;
 }
 @media screen and (min-width: 1024px) {
-  .action-button {
+  .page-header__upload-btn {
     background: #1968FC;
     width: 180px;
     height: 50px;
@@ -75,7 +73,7 @@
   }
 }
 
-.headline__text {
+.headline__title {
   margin: 80px 80px 20px 80px;
   font-weight: 600;
   font-size: 40px;
@@ -84,14 +82,14 @@
   color: #11223F;
 }
 @media screen and (min-width: 1024px) {
-  .headline__text {
+  .headline__title {
     margin-top: 150px;
     margin-left: 160px;
     height: 120px;
     width: 600px;
   }
 }
-.headline__subheadline-text {
+.headline__description {
   font-size: 20px;
   line-height: 40px;
   color: #11223F;
@@ -100,18 +98,18 @@
   margin-left: 80px;
 }
 @media screen and (min-width: 1024px) {
-  .headline__subheadline-text {
+  .headline__description {
     margin-top: 20px;
     margin-left: 160px;
     height: 120px;
     width: 600px;
   }
 }
-.headline__btn-desktop {
+.headline__upload-btn-desktop {
   display: none;
 }
 @media screen and (min-width: 1024px) {
-  .headline__btn-desktop {
+  .headline__upload-btn-desktop {
     width: 300px;
     height: 50px;
     background: #1968FC;
@@ -131,7 +129,7 @@
     margin-left: 160px;
   }
 }
-.headline__btn-mobile {
+.headline__upload-btn-mobile {
   background: #1968FC;
   box-shadow: 0px 10px 40px rgba(25, 104, 252, 0.3);
   font-weight: bold;
@@ -146,7 +144,7 @@
   margin-bottom: 80px;
 }
 @media screen and (min-width: 1024px) {
-  .headline__btn-mobile {
+  .headline__upload-btn-mobile {
     display: none;
   }
 }
