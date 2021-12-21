@@ -81,12 +81,13 @@
   font-size: 40px;
   line-height: 60px;
   letter-spacing: 1px;
-  color: #11223F;
+  width: 480px;
+  height: 120px;
 }
 @media screen and (min-width: 1024px) {
   .headline__title {
+    margin-left: 0;
     margin-top: 150px;
-    margin-left: 160px;
     height: 120px;
     width: 600px;
   }
@@ -94,16 +95,17 @@
 .headline__description {
   font-size: 20px;
   line-height: 40px;
-  color: #11223F;
+  width: 480px;
+  height: 80px;
   margin-right: 80px;
   margin-bottom: 40px;
   margin-left: 80px;
 }
 @media screen and (min-width: 1024px) {
   .headline__description {
+    margin-left: 0;
     margin-top: 20px;
-    margin-left: 160px;
-    height: 120px;
+    height: 80px;
     width: 600px;
   }
 }
@@ -127,8 +129,8 @@
     color: #FFFFFF;
     text-shadow: 0px 10px 40px rgba(25, 104, 252, 0.2);
     margin: 0;
-    margin-top: 40px;
-    margin-left: 160px;
+    margin-top: 0;
+    border: none;
   }
 }
 .headline__upload-btn-mobile {
@@ -144,6 +146,7 @@
   height: 50px;
   margin-left: 80px;
   margin-bottom: 80px;
+  border: none;
 }
 @media screen and (min-width: 1024px) {
   .headline__upload-btn-mobile {
@@ -153,13 +156,15 @@
 .headline__illustration {
   margin-left: 20px;
   margin-top: 80px;
+  width: 599px;
+  margin-bottom: -50px;
 }
 @media screen and (min-width: 1024px) {
   .headline__illustration {
     width: 599px;
     height: 502px;
     position: absolute;
-    top: 280px;
+    top: 200px;
     left: 600px;
   }
 }
@@ -169,6 +174,7 @@
   height: 180px;
   background-image: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson26/hw1/PleaseVisitDesktopSiteSectionBackground.png);
   display: flex;
+  justify-content: center;
   align-items: center;
   font-weight: 700;
   font-size: 20px;
@@ -177,6 +183,7 @@
   text-transform: uppercase;
   color: #FFFFFF;
   padding: 30px 60px;
+  margin: auto;
 }
 @media screen and (min-width: 1024px) {
   .please-visit-desktop-cite {
@@ -184,6 +191,9 @@
   }
 }
 
+.reviews {
+  margin: auto;
+}
 @media screen and (min-width: 1024px) {
   .reviews {
     display: flex;
@@ -247,6 +257,14 @@
   margin-top: 40px;
 }
 
+.workflow {
+  margin: auto;
+}
+@media screen and (min-width: 1024px) {
+  .workflow {
+    margin: 0;
+  }
+}
 .workflow__title {
   margin: 120px 60px 0;
   font-size: 30px;
@@ -399,6 +417,14 @@
   }
 }
 
+.features {
+  margin: auto;
+}
+@media screen and (min-width: 1024px) {
+  .features {
+    margin: 0;
+  }
+}
 .features__title {
   font-size: 30px;
   line-height: 60px;
@@ -515,21 +541,29 @@
 .page-footer {
   display: flex;
   position: relative;
-  margin-top: 180px;
-  margin-bottom: 90px;
+  width: 640px;
+  height: 130px;
+  background: #FBFBFB;
 }
-.page-footer .footer-logo {
+@media screen and (min-width: 1024px) {
+  .page-footer {
+    margin-top: 220px;
+    margin-bottom: 40px;
+  }
+}
+
+.footer-logo {
   display: flex;
 }
-.page-footer .footer-logo__image {
+.footer-logo__image {
   padding: 40px 0 40px 40px;
 }
 @media screen and (min-width: 1024px) {
-  .page-footer .footer-logo__image {
+  .footer-logo__image {
     margin-left: 120px;
   }
 }
-.page-footer .footer-logo__text {
+.footer-logo__text {
   background: rgba(25, 104, 252, 0.05);
   font-weight: 600;
   font-size: 14px;
@@ -544,20 +578,21 @@
   margin-top: 40px;
 }
 @media screen and (min-width: 1024px) {
-  .page-footer .footer-logo__text {
+  .footer-logo__text {
     margin-right: 70px;
   }
 }
-.page-footer .footer-navigation {
+
+.footer-navigation {
   display: none;
 }
 @media screen and (min-width: 1024px) {
-  .page-footer .footer-navigation {
+  .footer-navigation {
     display: flex;
   }
 }
 @media screen and (min-width: 1024px) {
-  .page-footer .footer-navigation__item {
+  .footer-navigation__item {
     margin-top: 40px;
     width: 120px;
     height: 50px;
@@ -572,29 +607,36 @@
     color: #000000;
   }
 }
-.page-footer .social-networks {
+
+.social-networks {
   margin-top: 55px;
   margin-bottom: 55px;
   margin-left: 70px;
 }
-.page-footer .social-networks__item-instagram {
+@media screen and (min-width: 1024px) {
+  .social-networks {
+    display: flex;
+  }
+}
+.social-networks__item-instagram {
   padding-left: 38px;
 }
-.page-footer .image {
+
+.image {
   width: 55px;
   height: 60px;
   position: absolute;
-  top: 70px;
-  left: 545px;
+  top: 60px;
+  left: 660px;
   right: 0;
   margin-bottom: 90px;
 }
 @media screen and (min-width: 1024px) {
-  .page-footer .image {
+  .image {
     width: 90px;
     height: 100px;
     position: absolute;
-    top: 0;
+    top: 20px;
     left: 1190px;
   }
 }
@@ -618,7 +660,7 @@ body {
 }
 @media screen and (min-width: 1024px) {
   body {
-    background-image: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson26/hw1/BackgroundDecor.png);
+    background: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson26/hw1/BackgroundDecor.png);
   }
 }
 
@@ -626,11 +668,13 @@ body {
   margin: auto;
   display: flex;
   flex-direction: column;
-  width: 100%;
-  background: linear-gradient(180deg, rgba(25, 104, 252, 0.0001) 0%, rgba(25, 104, 252, 0.05) 23.07%, rgba(25, 104, 252, 0.0001) 99.94%, rgba(25, 104, 252, 0.05) 100%);
+  min-width: 640px;
 }
 @media screen and (min-width: 1024px) {
   .homeDevs {
+    margin-top: 30px;
+    margin-left: 160px;
+    margin-right: 160px;
     position: relative;
   }
 }
