@@ -1,6 +1,7 @@
 # Vangoux Landing Page
 
 [Vangoux Landing Page Link](https://alekseyrd88.github.io/vangoux-landing-page-gromcode/)
+Layout supports mobile (up-to-400) and desktop (up-to-1024) versions
 
 #### The tech stack is
 
