@@ -1,0 +1,106 @@
+.headline {
+  
+   &__title {
+      margin: 80px 80px 20px 80px;
+      font-weight: 600;
+      font-size: 40px;
+      line-height: 60px;
+      letter-spacing: 1px;
+      width: 480px;
+      height: 120px;
+      @include for-large-up {
+         margin-left: 0;
+         margin-top: 150px;
+         height: 120px;
+         width: 600px;
+      }
+   }
+   &__description {
+      font-size: 20px;
+      line-height: 40px;
+      width: 480px;
+      height: 80px;
+      margin-right: 80px;
+      margin-bottom: 40px;
+      margin-left: 80px;
+      @include for-large-up {
+         margin-left: 0;
+         margin-top: 20px;
+         height: 80px;
+         width: 600px;
+      }
+   }
+   &__upload-btn-desktop {
+      display: none;
+      @include for-large-up {
+         width: 300px;
+         height: 50px;
+         background: #1968FC;
+         box-shadow: 0px 10px 40px rgba(25, 104, 252, 0.3);
+         font-weight: bold;
+         font-size: 14px;
+         line-height: 20px;  
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         text-align: center;
+         text-transform: uppercase;
+         color: #FFFFFF;
+         text-shadow: 0px 10px 40px rgba(25, 104, 252, 0.2);
+         margin: 0;
+         margin-top: 0;
+         border: none;
+         
+      }
+   }
+   &__upload-btn-mobile {
+      background: #1968FC;
+      box-shadow: 0px 10px 40px rgba(25, 104, 252, 0.3); 
+      font-weight: bold;
+      font-size: 14px;
+      line-height: 20px;
+      text-transform: uppercase;
+      color: #FFFFFF;
+      text-shadow: 0px 10px 40px rgba(25, 104, 252, 0.2);
+      width: 300px;
+      height: 50px;
+      margin-left: 80px;
+      margin-bottom: 80px;
+      border: none;
+      @include for-large-up {
+         display: none;
+      }
+   }
+   &__illustration {
+      margin-left: 20px;
+      margin-top: 80px;
+      width: 599px;
+      margin-bottom: -50px;
+      @include for-large-up {
+         width: 599px;
+         height: 502px;
+         position: absolute;
+         top: 200px;
+         left: 600px;
+      }
+   }
+}
+.please-visit-desktop-cite {
+   width: 640px;
+   height: 180px;
+   background-image: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson26/hw1/PleaseVisitDesktopSiteSectionBackground.png);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-weight: 700;
+   font-size: 20px;
+   line-height: 40px;
+   text-align: center;
+   text-transform: uppercase; 
+   color: #FFFFFF;
+   padding: 30px 60px;
+   margin: auto;
+   @include for-large-up {
+      display: none;
+   }
+}

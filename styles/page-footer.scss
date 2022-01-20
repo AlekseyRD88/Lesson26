@@ -1,0 +1,89 @@
+.page-footer {
+   display: flex;
+   position: relative;
+   width: 640px;
+   height: 130px;
+   background: #FBFBFB;
+   @include for-large-up {
+      margin-top: 220px;
+      margin-bottom: 40px;
+      
+   }
+}
+   .footer-logo {
+      display: flex;
+      &__image {
+         padding: 40px 0 40px 40px;
+         @include for-large-up {
+            margin-left: 120px;
+         }
+      }
+      &__text {
+         background: rgba(25, 104, 252, 0.05);
+         font-weight: 600;
+         font-size: 14px;
+         line-height: 20px;
+         display: flex;
+        align-items: center;
+        justify-content: center;
+         text-align: center;
+         color: #1968FC;
+         height: 50px;
+         width: 200px;
+         margin-top: 40px;
+         @include for-large-up {
+            margin-right: 70px;
+         }
+         
+      }
+   }
+   .footer-navigation {
+      display: none;
+      @include for-large-up {
+         display: flex;
+      }
+      &__item {
+         @include for-large-up {
+            margin-top: 40px;
+            width: 120px;
+            height: 50px;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            text-decoration: none;
+            color: #000000;
+         }
+      }
+   }
+   .social-networks {
+      margin-top: 55px;
+      margin-bottom: 55px;
+      margin-left: 70px;
+      @include for-large-up {
+           display: flex; 
+      }
+      &__item-instagram {
+         padding-left: 38px;
+         
+      }
+   }
+   .image {
+      width: 55px;
+      height: 60px;
+      position: absolute;
+      top: 60px;
+      left: 660px;
+      right: 0;
+      margin-bottom: 90px;
+      @include for-large-up {
+         width: 90px;
+         height: 100px;
+         position: absolute;
+         top: 20px;
+         left: 1190px;
+      }
+   }
