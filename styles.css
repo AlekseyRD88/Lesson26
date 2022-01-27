@@ -201,7 +201,7 @@
 }
 
 .review {
-  background: #FFFFFF;
+  background: #ffffff;
   width: 540px;
   height: 280px;
   margin: 50px 50px 0;
@@ -232,7 +232,7 @@
   line-height: 30px;
   display: flex;
   align-items: center;
-  color: #11223F;
+  color: #11223f;
 }
 .review__person-details-position {
   margin-left: 20px;
@@ -241,13 +241,13 @@
   line-height: 30px;
   display: flex;
   align-items: center;
-  color: #1967FA;
+  color: #1967fa;
 }
 .review__text {
   margin: 40px;
   font-size: 16px;
   line-height: 30px;
-  color: #11223F;
+  color: #11223f;
 }
 .review__quote {
   position: absolute;
@@ -256,9 +256,23 @@
   margin-right: 40px;
   margin-top: 40px;
 }
+@media screen and (min-width: 1024px) {
+  .review__margin {
+    margin-left: 40px;
+  }
+}
 
 .workflow {
   margin: auto;
+  /*
+  &__margins {
+      margin-top: 0;
+      @include for-large-up {
+          margin-left: 0;
+          margin-right: 0;
+      }
+  }
+  */
 }
 @media screen and (min-width: 1024px) {
   .workflow {
@@ -272,7 +286,7 @@
   display: flex;
   align-items: center;
   text-transform: uppercase;
-  color: #11223F;
+  color: #11223f;
 }
 @media screen and (min-width: 1024px) {
   .workflow__title {
@@ -284,13 +298,13 @@
 .workflow__line {
   width: 80px;
   height: 4px;
-  border-top: 2px solid #1968FC;
+  border-top: 2px solid #1968fc;
   margin-top: 10px;
   margin-left: 60px;
 }
 @media screen and (min-width: 1024px) {
   .workflow__line {
-    margin-top: 120px;
+    margin-top: 10px;
     margin-left: 120px;
   }
 }
@@ -302,7 +316,7 @@
 .workflow__card-connection {
   height: 40px;
   width: 1px;
-  border-left: 2px dashed #1968FC;
+  border-left: 2px dashed #1968fc;
   margin-left: 119px;
 }
 @media screen and (min-width: 1024px) {
@@ -311,25 +325,23 @@
     height: 1px;
     margin-left: 0;
     border: none;
-    border-top: 2px dashed #1968FC;
+    border-top: 2px dashed #1968fc;
   }
 }
 @media screen and (min-width: 1024px) and (min-width: 1024px) {
   .workflow__card-connection-line1 {
-    position: absolute;
-    left: 485px;
-    top: 1510px;
+    display: flex;
+    margin-top: 130px;
   }
 }
 @media screen and (min-width: 1024px) and (min-width: 1024px) {
   .workflow__card-connection-line2 {
-    position: absolute;
-    left: 885px;
-    top: 1550px;
+    margin-top: 170px;
+    margin-left: 0;
   }
 }
 .workflow__step {
-  background: #FFFFFF;
+  background: #ffffff;
   box-shadow: 0px 20px 60px rgba(49, 69, 244, 0.1);
   width: 520px;
   height: 180px;
@@ -353,7 +365,7 @@
   align-items: center;
   padding-top: 40px;
   padding-left: 40px;
-  color: #11223F;
+  color: #11223f;
 }
 .workflow__step-subtitle {
   font-weight: 700;
@@ -362,7 +374,7 @@
   display: flex;
   align-items: center;
   text-transform: uppercase;
-  color: #1967FA;
+  color: #1967fa;
   padding-left: 40px;
 }
 .workflow__step-text {
@@ -370,7 +382,7 @@
   line-height: 30px;
   display: flex;
   align-items: center;
-  color: #11223F;
+  color: #11223f;
   padding-top: 10px;
   padding-left: 40px;
 }
@@ -395,25 +407,15 @@
 }
 @media screen and (min-width: 1024px) {
   .workflow__step2 {
-    position: absolute;
-    left: 560px;
-    top: 1440px;
+    margin-left: 0;
+    margin-top: 60px;
+    margin-right: 0;
   }
 }
 @media screen and (min-width: 1024px) {
   .workflow__step3 {
-    position: absolute;
-    left: 960px;
-    top: 1480px;
-  }
-}
-.workflow__margins {
-  margin-top: 0;
-}
-@media screen and (min-width: 1024px) {
-  .workflow__margins {
     margin-left: 0;
-    margin-right: 0;
+    margin-top: 100px;
   }
 }
 
@@ -431,7 +433,7 @@
   display: flex;
   align-items: center;
   text-transform: uppercase;
-  color: #11223F;
+  color: #11223f;
   margin-top: 125px;
   margin-left: 60px;
   margin-right: 60px;
@@ -445,7 +447,7 @@
 .features__line {
   width: 80px;
   height: 4px;
-  border-top: 2px solid #1968FC;
+  border-top: 2px solid #1968fc;
   margin-top: 10px;
   margin-left: 60px;
 }
@@ -485,7 +487,7 @@
   line-height: 40px;
   display: flex;
   align-items: center;
-  color: #11223F;
+  color: #11223f;
   margin-left: 20px;
 }
 @media screen and (min-width: 1024px) {
@@ -495,11 +497,11 @@
   }
 }
 .features__list-feature-text {
-  background: #FFFFFF;
+  background: #ffffff;
   box-shadow: 0px 20px 60px rgba(49, 69, 244, 0.1);
   font-size: 16px;
   line-height: 30px;
-  color: #11223F;
+  color: #11223f;
   padding: 30px 40px;
 }
 @media screen and (min-width: 1024px) {
@@ -521,18 +523,14 @@
 }
 @media screen and (min-width: 1024px) {
   .features__list-feature-desktop2 {
-    position: absolute;
-    top: 1940px;
-    left: 560px;
+    margin-top: 80px;
     width: 320px;
     height: 290px;
   }
 }
 @media screen and (min-width: 1024px) {
   .features__list-feature-desktop3 {
-    position: absolute;
-    left: 960px;
-    top: 1980px;
+    margin-top: 120px;
     width: 320px;
     height: 290px;
   }
@@ -543,12 +541,12 @@
   position: relative;
   width: 640px;
   height: 130px;
-  background: #FBFBFB;
+  background: #fbfbfb;
 }
 @media screen and (min-width: 1024px) {
   .page-footer {
     margin-top: 220px;
-    margin-bottom: 40px;
+    margin-bottom: 90px;
   }
 }
 
@@ -572,7 +570,7 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-  color: #1968FC;
+  color: #1968fc;
   height: 50px;
   width: 200px;
   margin-top: 40px;
@@ -612,6 +610,7 @@
   margin-top: 55px;
   margin-bottom: 55px;
   margin-left: 70px;
+  display: flex;
 }
 @media screen and (min-width: 1024px) {
   .social-networks {
@@ -623,21 +622,15 @@
 }
 
 .image {
-  width: 55px;
-  height: 60px;
-  position: absolute;
-  top: 60px;
-  left: 660px;
-  right: 0;
-  margin-bottom: 90px;
+  margin-left: 117px;
+  margin-top: 70px;
+  width: 100%;
+  height: 100%;
 }
 @media screen and (min-width: 1024px) {
   .image {
-    width: 90px;
-    height: 100px;
-    position: absolute;
-    top: 20px;
-    left: 1190px;
+    margin-bottom: 90px;
+    margin-top: 50px;
   }
 }
 
